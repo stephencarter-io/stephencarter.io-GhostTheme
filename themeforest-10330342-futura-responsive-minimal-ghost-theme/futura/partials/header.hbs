@@ -1,0 +1,38 @@
+<!-- start navigation -->
+<nav class="main-navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="navbar-header">
+					<span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="fa fa-bars"></i>
+					</span>
+				</div>
+				<div class="collapse navbar-collapse" id="main-menu">
+					{{! insert navigation partial}}
+					{{navigation}}
+					{{! insert manuala navigation if there is no navigation}}
+					{{#unless @blog.navigation}}
+					{{> manual-navigation}}
+					{{/unless}}
+					<ul class="menu" style="float: right;">
+						<li><a href="https://www.linkedin.com/in/stephenmarkcarter/"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://www.facebook.com/Citizen27B/"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/StravrosTheGeek"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://feeds.feedburner.com/StephenCarter"><i class="fa fa-rss"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+<!-- end navigation -->
+<!-- start header -->
+<header class="main-header">
+	<div class="container">
+		<div class="cover-image" style="background-image: url({{@blog.cover_image}});">
+		</div>
+	</div>
+</header>
+<!-- end header -->

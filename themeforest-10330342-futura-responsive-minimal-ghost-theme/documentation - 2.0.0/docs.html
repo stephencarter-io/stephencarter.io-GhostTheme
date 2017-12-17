@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Futura-2.0.0 - User Documentation</title>
+<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet"
+        type="text/css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/prettify.css">
+</head>
+<body>
+<nav>
+  <div class="container">
+    <h1>GBJ Solution</h1>
+    <div id="menu">
+      <ul class="toplinks">
+        <li><a href="http://futura.gbjsolution.com/">Theme Demo</a></li>
+        <li><a href="http://themeforest.net/user/GBJsolution/portfolio/?ref=gbjsolution">Themeforest portfolio</a></li>
+        <li><a href="http://graphicriver.net/user/GBJsolution/portfolio/?ref=gbjsolution">Graphicriver Portfolio</a></li>
+      </ul>
+    </div>
+    <a id="menu-toggle" href="#" class=" ">&#9776;</a> </div>
+</nav>
+<header>
+  <div class="container">
+    <h2 class="docs-header">Futura-2.0.0 - User Documentation</h2>
+    <p>This documentation is for theme version >= 2.0.0 which works with ghost version >= 1.0.0. If you are using older version of ghost ( version less than ghost 1.0.0 ) then use older version of the theme ( less than 2.0.0 ) and follow respective older version documentation.</p>
+  </div>
+</header>
+<section class="thanks">
+  <div class="container">
+    <h3>Thank you vey Much!</h3>
+      <p>
+        Thank you very much for purchasing this theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/gbjsolution/?ref=gbjsolution">here.</a> Thanks so much!
+      </p>
+    <h3>Please Rate this theme.</h3>
+    <p>
+      If you like this theme then consider to rate it. If you are going to to rate this below then please consider to tell me the reason before rating it. I will do my best to help you.
+      you can send me a message <a href="http://themeforest.net/user/gbjsolution/?ref=gbjsolution">here.</a> To rate this item go <a href="http://themeforest.net/downloads">here</a>.
+    </p>
+  </div>
+  <hr>
+</section>
+<section>
+  <div class="container">
+    <!-- sidebar menue start -->
+    <ul class="docs-nav" id="menu-left">
+      <li><strong>Getting Started</strong></li>
+      <li><a href="#before_start" class=" ">Before You Start</a></li>
+      <li><a href="#option_config" class=" ">Theme Option</a></li>
+      <li><a href="#social_links">Adding Soclial Links</a></li>
+      <li><a href="#widgets">Sidebar &amp; Footer Widgets</a></li>
+      <li><a href="#twitter-settings">Twitter Widget Settings</a></li>
+      <li><a href="#installation" class=" ">Installation</a></li>
+      <li><a href="#navigation" class=" ">Navigation Links</a></li>
+      <li><a href="#analytics" class=" ">Analytics Code</a></li>
+      <li><a href="#featured_media" class=" ">Featured Media In Post</a></li>
+      <li class="separator"></li>
+      <li><strong>Theme Customization</strong></li>
+      <li><a href="#change_color" class=" ">How to Change Color</a></li>
+      <li><a href="#changelog" class=" ">Changelog</a></li>
+      <li class="separator"></li>
+      <li><strong>Sources and Credits</strong></li>
+      <li><a href="#font" class=" ">Font</a></li>
+      <li><a href="#scripts" class=" ">Scripts</a></li>
+      <li><a href="#images" class=" ">Images</a></li>
+    </ul>
+    <!-- sidebar menue end -->
+    <div class="docs-content">
+      <h2>Getting Started</h2>
+      <h3 id="before_start">Before you start</h3>
+      <p>This documentation is intended to help you properly install and configure the theme on your ghost blog. <strong>Make sure to keep a backup before any modification</strong>.
+      </p>
+      <p>If you are new to Ghost then some links may be useful to know about ghost itself:</p>
+      <ul>
+        <li>Ghost Official documentation: <a href="http://docs.ghost.org/">http://docs.ghost.org/</a></li>
+        <li>Ghost Help and support center: <a href="https://help.ghost.org">https://help.ghost.org</a></li>
+      </ul>
+      <h2>Configuration &amp; Installation</h2>
+      <p>To use the theme extract the main downloaded zip file and first of all make a backup of the theme main folder. theme backup is recomended becuse you can always get back to the fresh copy.</p>
+      <h3 id="option_config">Theme option configuration</h3>
+      <p>To configure this theme properly for your site please follow below instruction.</p>
+      <p>open <code>config.hbs</code> file located in <strong>partials</strong> folder with a plain text editor (like notepad, notepad++, Sublime text etc).<br>
+      Then replace the variable's value with your own values.</p>
+      <ol>
+        <li>Set the <code>disqus_shotrname</code> value to your won Disqus shotrname. To generate a disqus shortname...
+          <ul>
+            <li>Go to disqus.com and signed up.</li>
+            <li>Then follow the instruction and add your website there from disqus.com dashboard.</li>
+            <li>You will get a dishqus shortname, copy that.</li>
+            <li>In <code>config.hbs</code> set <code>disqus_shortname = 'yourDisqusShortnameHere';</code></li>
+          </ul>
+        </li>
+        <li>
+          Set The position of sidebar in <code>sidebar_left</code> variable.<br>
+          If you want th sidebar at left side then set <code>sidebar_left = true;</code>. Otherwise keep default value  <code>sidebar_left = false;</code>
+        </li>
+        <li>Set your google badge
+          <ul>
+            <li>Set your google plus profile type in <code>badge_type = 'page';</code><br>
+              If you are linking to you page then no need to change it. If you linking to your personal profile or comunity then you need to chang the value accordingly.</li>
+            <li>Add Your google plus url here <code>google_plus_url = 'YourGooglePlusURL';</code></li>
+          </ul>
+        </li>
+        <li>Facebook Page settings
+          <ul>
+            <li>Set your Facebook profile/page url <code>facebook_page_url = 'YourFacebookPageURL';</code></li>
+          </ul>
+        </li>
+        <li>Configure the mailchip signup form
+          <ul>
+            <li>Create a list on mailchimp and generate a subsscribe form. Then copy the form url and set it to <code>mailchimp_form_url = 'YourMailchimpSubscribeFormUrl';</code> <br>
+              Remember to remove <code>/post</code> from the url. For better understanding compare to the default link provided.</li>
+          </ul>
+        </li>
+        <li>
+          Set your Flickr ID in <code>flickr_id</code>. To get your ID login to flickr.com and click on 'you'. The last part between <code>/</code> is your ID. You can also use <a href="http://idgettr.com/">idgettr.com</a> to get flicker ID easily.
+        </li>
+      </ol>
+      <p>The <code>config.hbs</code> file will look like below.</p>
+      <pre class="prettyprint">
+&lt;script&gt;
+/*====================================================
+  THEME SETTINGS & GLOBAL VARIABLES
+====================================================*/
+//  1. Disqus comment settings
+var disqus_shortname = 'futurathemedemo'; // required: replace example with your forum shortname
+
+//  2. Sidebar Position
+var sidebar_left = false; // Set true or flase for positioning sidebar on left
+
+//  3. Recent Post count
+var recent_post_count = 3;
+
+//  4. Google+ badge settings
+var badge_type = 'page'; // person / page / community ----- three type of google badge
+var google_plus_url = 'https://plus.google.com/111813546240107028721';
+
+//  5. Facebook Page Setting
+var facebook_page_url = 'https://www.facebook.com/gbjsolution';
+
+//  6. Mailchimp signup form Setting
+var mailchimp_form_url = 'http://gbjsolution.us4.list-manage.com/subscribe?u=a63b2fed3ed61b70bf56d1aed&id=1e3806b1d4';
+var success_message = "Please check your inbox and confirm your email address. Thanks!";
+
+//  7. Flickr Setting
+var flickr_id = '52617155@N08';
+&lt;/script&gt;
+      </pre>
+      <h3 id="social_links">Adding soclial links</h3>
+      <p>To add the actual socilal links to the icons in "<strong>follow widget</strong>" please follow the steps below</p>
+      <ul>
+        <li>open <code>widget-social.hbs</code> file located in <strong>partials</strong> folder.</li>
+        <li>Now replace the <code>#</code> for each <code>href</code> value with your own profile links.</li>
+        <li>If you want to add any other icon then just copy one of the line there and only replace the <code>fa-*</code> class in that line. For list of available icons in fontawesome visit <a href="http://fontawesome.io/icons/">here</a>.</li>
+      </ul>
+      <p>The <code>widget-social.hbs</code> file will look like below.</p>
+      <pre class="prettyprint">
+&lt;!-- start social links --&gt;
+&lt;!-- replace the # with your own profile link address --&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-google-plus"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-linkedin"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-skype"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa  fa-pinterest"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-youtube"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-vimeo-square"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-dribbble"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-flickr"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-tumblr"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-github"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-stack-overflow"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-stack-exchange"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-xing"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-envelope"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{{@blog.url}}/rss/"&gt;&lt;i class="fa fa-rss"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;!-- end social links --&gt;
+</pre>
+      <h3 id="widgets">Sidebar & Footer Widgets</h3>
+      <p>The sidebar is widgetized. You can move up and down or entirely remove any of theme if you wish.<br>
+      To do that you have to make very little changes in <code>sidebar.hbs</code> file which is located in <strong>partials</strong> folder.<br>
+      All the widget files are seperate in <strong>partials</strong> folder and named with prefix 'widget'. <strong>Example:-</strong> widget-facebook.hbs</p>
+      </p>Please Follow the steps below.</p>
+      <ul>
+        <li>Open <code>sidebar.hbs</code> folder and then reorder call.</li>
+        <li>To hide or remove any widget in sidebar just comment out that specific widget.</li>
+        <li>To comment out any widget you need to add a <code>!</code> before <code>></code> in that widget.<br>
+        <strong>Example:-</strong> If you want to hide <code>{{> widget-googleplus}}</code> then  add <code>!</code> like this <code>{{!> widget-googleplus}}</code></li>
+        <li>Then save the file</li>
+      </ul>
+      <p>The <code>sidebar.hbs</code> will look like this..</p>
+      <pre class="prettyprint">
+&lt;!-- start sidebar --&gt;
+&lt;div class="col-md-4 sidebar"&gt;
+  {{&gt; widget-social}}
+  {{&gt; widget-newsletter}}
+  {{&gt; widget-recentpost}}
+  {{&gt; widget-tagcloud}}
+  {{&gt; widget-ad}}
+  {{&gt; widget-facebook}}
+  {{&gt; widget-twitter}}
+  {{&gt; widget-google-plus}}
+  {{&gt; widget-text}}
+&lt;/div&gt;
+&lt;!-- end sidebar --&gt;
+      </pre>
+      <p>Follow the same procedure for footer widget. The widgetized area of <code>footer.hbs</code> will look like below.</p>
+      <pre class="prettyprint">
+&lt;!-- start first footer widget area --&gt;
+&lt;div class="col-sm-4"&gt;
+  {{&gt; widget-recentpost}}
+&lt;/div&gt;
+&lt;!-- end first footer widget area --&gt;
+&lt;!-- start second footer widget area --&gt;
+&lt;div class="col-sm-4"&gt;
+  {{&gt; widget-tagcloud}}
+&lt;/div&gt;
+&lt;!-- end second footer widget area --&gt;
+&lt;!-- start third footer widget area --&gt;
+&lt;div class="col-sm-4"&gt;
+  {{&gt; widget-flickr}}
+&lt;/div&gt;
+&lt;!-- end third footer widget area --&gt;
+      </pre>
+      <h3 id="twitter-settings">Twitter Widget Settings</h3>
+      Recently Twitter has changed their widget creation process. Please follow the steps below to setup the twitter widget.
+      Visit <a href="https://publish.twitter.com/">publish.twitter.com</a>
+      <ul>
+        <li>Then add your profile URL there. Example - http://www.twitter.com/gbjsolution .</li>
+        <li>Choose embeded timeline.</li>
+        <li>Click on customization option.</li>
+        <li>Set height as you wish. Around 300 to 400 looks good.</li>
+        <li>Click on Update and then copy code.</li>
+        <li>Now open "widget-twitter.hbs" file which is located in partials folder.</li>
+        <li>In place of "Add your twitter code here" in that file, add the code which you have copied from twitter's site.</li>
+        <li>Save the file and restart ghost.</li>
+      </ul>
+     <h3 id="installation">Installation</h3>
+      </p>Ones the necessary configuration is compleate make a zip of the modified theme folder.<br>
+      Now login to your admin area and go to Design. In that page scroll down and you can find "Upload a theme" button. Upload the theme zip which you have created while ago. After compleating upload activate the theme.<br>
+      <p>If you want to install the demo data to make your site as the preview then you can go to <code>your-site-url/ghost/settings/labs/</code> and then import the <strong>futura.ghost.demo.json</strong> file there. This file is located in <strong>demo data</strong> folder in main download folder.</p>
+      <h3 id="navigation">Navigation links</h3>
+      <p>To add links to you static page please follow the steps below.</p>
+      <ul>
+        <li>Post an article in your blog and Then select it as static page.</li>
+        <li>Copy the url for this post / page.</li>
+        <li>Go to Design page in your admin dashboard.</li>
+        <li>Add a lebel and the url and save it.</li>
+        <li>Now the theme will show newly added link in navigation.</li>
+      </ul>
+      <h3 id="analytics">Adding Analytics or Tracking Code</h3>
+      <p>To add Google analytics code or any other tracking code, go to Code injection page in your dashboard and add your code in blog footer section. Then save it.</p>
+      <h3 id="featured_media">Featured Media in post</h3>
+      <p>Now Ghost supports featured/cover image in post nativly. and this theme handel that nicely.</p>
+      <p>If you want to add any embeded media like youtube video, vimeo video, soundcloud music or any other embeded iframe as featured media in your post then you have to wrape that in <code>&lt;featured&gt;Your Embed code here...&lt;/featured&gt;</code> tag while writing the post. and make sure not to set a cover image in that post.</p>
+      <p>An example of youtube video below...</p>
+      <pre class="prettyprint">
+&lt;featured&gt;&lt;iframe width="560" height="315" src="//www.youtube.com/embed/Uz2P2WdSzyo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/featured&gt;
+      </pre>
+      <hr>
+      <h2>Theme Customization</h2>
+      <h3 id="change_color">How to Change Color</h3>
+      <p>To change the Theme color pleae follow the steps below.</p>
+      <ul>
+        <li>First of all you need a LESS compiler. If you are on Windows, use Win Less. For mac you can use Less.app.</li>
+        <li>Add the css folder of your theme (located in /assets/) to less compiler.</li>
+        <li>Open the <code>variables.less</code> file in your code editor. This file is located in <strong>assets/css/less_parts</strong> folder.</li>
+        <li>Now you have to change the color hexcode (#xxxxxx) in this file and save the file.</li>
+        <li>Now compile the <code>screen.less</code> file using less compiler. This file is located in <strong>assets/css</strong> folder. This will rebuild the <code>screen.css</code> file.</li>
+        <li>At last Update the files in your server and restart ghost.</li>
+      </ul>
+      <p>The <code>variables.less</code> file looks like below.</p>
+      <pre class="prettyprint">
+/*====================================================
+  COLOR VARIABLE FOR THEME
+====================================================*/
+@theme-color: #00ada7;        // theme color
+@bg-color: #ebebeb;         // Background color / secndary theme color
+@bg-color-light: #e0ecef;     // Light background color
+@bg-color-footer: #202020;      // Footer background color
+@bg-color-footer-dark: #111111;   // Footer dark background color
+@text-color: #505050;       // Main text color
+@text-color-heading: #303030;   // Heading text color
+@text-color-light: #959595;     // Light text color
+@border-color: #ebebeb;       // Border color
+@black: #000000;          // Pure black
+@white: #FFFFFF;          // Pure White
+      </pre>
+
+      <!-- start Sources and Credits -->
+      <hr>
+      <h3 id="changelog">Changelog</h3>
+      <p><strong>v-2.0.0 1st july, 2017</strong></p>
+      <ul>
+        <li><strong>This version is a major update. It works with Ghost version >= 1.0.0. It will not work with older version of ghost ( ghost version < 1.0.0 ).</strong>
+        <li>Removed favicon from default.hbs template. Ghost >= 1.0.0 automatically handle it. Upload publication icon from General setting page, in your dashboard.</li>
+        <li>Rewritten package.json to be compatible with ghost 1.0.0</li>
+        <li>Recent post widget now written using {{get}} helper. Removed old javascript method. For this reason, "recent_post_count" setting in config.hbs file also removed.</li>
+        <li>Removed analytics.hbs file. To add anylytic code in your site, use Ghost's inbuilt code injection feature and add your code in blog footer area.</li>
+        <li>removed manual-navigation.hbs ( those who use ghost inbuilt navigation will not be effected.).</li>
+        <li>Added Author's twitter and facebook link in about author area and author cover area.</li>
+        <li>Font Awesome and Bootstrap updated</li>
+        <li>jQuery library updated to v2.2.4</li>
+      </ul>
+      <p><strong>v-1.4 6th August, 2016</strong></p>
+      <ul>
+        <li>Rewrite some javascript to use Ghost API instead of RSS feed. <strong>Now enabling public API under lab settings is required</strong></li>
+        <li>Modified tag cloud widget using ghost's get helper to show all available tags.</li>
+        <li>Change Twitter widget's to use twitter's new widget code.</li>
+      </ul>
+       <p><strong>v-1.3</strong></p>
+       <ul>
+         <li>Added Jquery library because Ghost removed jquery from core in version 0.7.0</li>
+       </ul>
+      <p><strong>v-1.2</strong></p>
+       <ul>
+         <li>Added previous and next post link in single post view</li>
+         <li>Added new <code>prev-next.hbs</code> file and it contains the code for the Previous and next post link. This partial is called in post.hbs file below the post comment.</li>
+         <li>Added Required css for this.</li>
+       </ul>
+       <p><strong>v-1.1</strong></p>
+       <ul>
+         <li>Added Support for Ghost's inbuilt navigation (Available from Ghost - 0.5.9)</li>
+         <li>Changed the name of the old file <code>navigation.hbs</code> to <code>manual-navigation.hbs</code>.</li>
+         <li>Added new <code>navigation.hbs</code> file according to ghost's latest version requirement.</li>
+         <li>Added small CSS to highlight the current page when using Ghost's inbuilt navigation system.</li>
+       </ul>
+      <hr>
+      <h2>Source and Credits</h2>
+      The fonts, scripts, images or other files used in this theme are listed below.
+      <h3 id="font">Font</h3>
+      <li><a href="http://www.google.com/fonts/specimen/Open+Sans" target="_blank">Open Sans</a></li>
+      <li><a href="http://www.google.com/fonts/specimen/Roboto+Slab" target="_blank">Roboto Slab</a></li>
+      <li><a href="http://fontawesome.io/" target="_blank">Fontawesome icon font</a></li>
+      <h3 id="scripts">Scripts</h3>
+      <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap 3.3.7</a></li>
+      <li><a href="http://fitvidsjs.com/" target="_blank">Fitvids</a></li>
+      <li><a href="https://highlightjs.org/" target="_blank">Highlight js</a></li>
+      <li><a href="http://www.newmediacampaigns.com/blog/a-jquery-flickr-feed-plugin" target="_blank">jflickrfeed</a></li>
+      <h3 id="images">Images</h3>
+      <li>Preview Images form <a href="https://unsplash.com/" target="_blank">unsplash.com</a></li>
+      <!-- end Sources and Credits -->
+    </div>
+  </div>
+</section>
+<section class="vibrant">
+  <div class="container">
+    <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+
+<p class="signature">Happy Blogging<br>
+Best Regards<br>
+Biswajit Saha<br>
+</p>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p> &copy; 2015 - 2017 GBJ solution - All Rights Reserved</p>
+  </div>
+</footer>
+<script src="assets/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="assets/js/prettify/prettify.js"></script>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+<script src="assets/js/layout.js"></script>
+ <script src="assets/js/jquery.localscroll-1.2.7.js" type="text/javascript"></script>
+ <script src="assets/js/jquery.scrollTo-1.4.3.1.js" type="text/javascript"></script>
+</body>
+</html>
